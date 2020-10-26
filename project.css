@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+
+
+@media (min-width: 1200px) {
+
+
+body {
+	font-size: 50px;
+	font-family: 'Prosto One';
+}
+.head {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+
+
+#logo img {
+	margin-top: 200px;
+	margin-right: 200px;
+	width: 346px;
+	height: 93px;
+}
+
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	list-style-type: none;
+	font-family: 'Prosto One';
+}
+
+.menu li {
+	width: 591px;
+	height: 73px;
+	border: 5px solid black;
+	margin-top: 8px;
+	padding: 5px 15px;
+	border-color: rgba(187, 132, 81, 0.34);
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-right: none;
+	text-align: left;
+    font-size: 30px;
+	cursor: pointer;
+}
+
+.menu li a {
+	margin-left: 87px;
+}
+li:hover {
+	color: white;
+	background: rgba(187, 132, 81, 0.34);
+}
+
+article {
+	background-color:  rgba(187, 132, 81, 0.34);
+	width: 1217px;
+	height: 629px;
+	margin-right: auto;
+	padding: 12% 12%;
+	border-top-right-radius: 80px;
+	border-bottom-right-radius: 80px;
+	font-family: 'Prosto One';
+
+}
+
+article h1 {
+	color: white;
+	font-size: 30px;
+}
+article p {
+	color: white;
+	font-size: 30px;
+}
+
+.main-title {
+	width: 546px;
+	height: 84px;
+	margin-top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	color: white;
+	background: rgba(187, 132, 81, 0.34);
+	border-radius: 20px;
+}
+
+.main-title h2 {
+	font-family: 'Prosto One';
+	font-size: 30px;
+	text-align: center;
+	padding: 24px 35px 23px 36px;
+}
+
+.main-title:hover {
+	color: black;
+	
+}
+
+.content-1{
+	width: 100%;
+	height: 650px;
+	background-image: url('img/back1.jpg');
+    background-size: 100% 100%;
+    object-fit: cover;
+    object-position: 20% 50px;
+    background-repeat: no-repeat;
+} 
+
+.content-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+
+.content-2 {
+	width: 100%;
+	height: 650px;
+	background-image: url('img/back2.jpg');
+    background-size: 100% 100%;
+    object-fit: cover;
+    object-position: 20% 50px;
+    background-repeat: no-repeat;
+} 
+
+.content-2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.content-3 {
+	width: 100%;
+	height: 650px;
+	background-image: url('img/back3.jpg');
+    background-size: 100% 100%;
+    object-fit: cover;
+    object-position: 20% 50px;
+    background-repeat: no-repeat;
+} 
+
+.content-3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.product {
+	width: 270px;
+	height: 560px;
+	background-color: white;
+	border-radius: 20px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+
+.product img {
+	display: block;
+	margin-right:auto; 
+	margin-left:auto;
+	width:230px;
+	height:267px;
+}
+
+.product h3 {
+	margin-top: 7px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 15px;
+	color: #020202;
+	font-family: 'Prosto One';
+}
+
+.product p {
+	font-size: 10px;
+	margin-left: 23px;
+	margin-right: 38px;
+	font-family: 'Prosto One';
+}
+.content-photo {
+	width:140px;
+	height:140px;
+	border-radius: 20px;
+}
+
+.cursor {
+	width: 50px;
+	height: 50px; 
+	margin-top: 320px;
+}
+
+
+.act {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-top: 50px;
+
+}
+
+.button {
+	background-color: #1C1C1C;
+	width: 131px;
+	height: 34px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: 0px;
+	border-radius: 25px;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+
+
+.info {
+	background-color: #1C1C1C;
+	width: 22px;
+	height: 22px;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	padding: 1px 1px 1px 1px;
+	border-radius: 100%;
+	margin-right: 20px;
+}
+
+
+.contacts {
+	height: 500px;
+	margin-top: 200px;
+	background-color: rgba(187, 132, 81, 0.34);
+}
+
+.end {
+	margin-top: 7em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.left-end li {
+	list-style-type: none;
+	width: 638px;
+	height: 127px;
+	border: 5px solid black;
+	text-align: left;
+	padding: 25px 39px 25px 191px;
+	border-color: rgba(187, 132, 81, 0.34);
+    border-top-right-radius:40px;
+    border-bottom-right-radius:40px;
+    font-size: 25px;
+    font-family: 'Prosto One';
+}
+
+
+.right-end {
+	width: 800px;
+	height: 629px;
+	background-color: rgba(187, 132, 81, 0.34);
+	padding: 101px 350px 172px 82px;
+	margin-left: 1em;
+	border-top-left-radius: 80px;
+	border-bottom-left-radius: 80px;
+	color: white;
+	font-size: 30px;
+}
+
+.right-end h4 {
+	text-align: left;
+	font-size: 40px;
+	margin-bottom: 40px;
+}
+.right-end p img {
+	width: 50px;
+	height: 45px;
+}
+
+.social {
+	display: flex;
+	flex direction: row;
+	justify-content: space-between;
+	margin-right: 30px;
+
+}
+.smlg {
+	width: 200px;
+	height: 100px;
+	margin-right: 129px;
+	margin-bottom: 20px;
+}
+table {
+	border-collapse: inherit;
+	font-family: 'Prosto One';
+}
+
+td {
+	color: white;
+	border: none
+}
+
+}

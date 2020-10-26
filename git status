@@ -1,0 +1,42 @@
+[1mdiff --git a/1.js b/1.js[m
+[1mdeleted file mode 100644[m
+[1mindex e69de29..0000000[m
+[1mdiff --git a/project.js b/project.js[m
+[1mindex 3866bd8..ad2a4e2 100644[m
+[1m--- a/project.js[m
+[1m+++ b/project.js[m
+[36m@@ -1,14 +1,21 @@[m
+[31m-progress {[m
+[31m-    width: 30%;[m
+[31m-  }[m
+[31m-  elem.onclick = function() {[m
+[31m-    animate({[m
+[31m-      duration: 1000,[m
+[31m-      timing: function(timeFraction) {[m
+[31m-        return timeFraction;[m
+[31m-      },[m
+[31m-      draw: function(progress) {[m
+[31m-        elem.style.width = progress * 100 + '%';[m
+[32m+[m[32mfunction animate({timing, draw, duration}) {[m
+[32m+[m
+[32m+[m[32m    let start = performance.now();[m
+[32m+[m[41m  [m
+[32m+[m[32m    requestAnimationFrame(function animate(time) {[m
+[32m+[m[32m      // timeFraction изменяется от 0 до 1[m
+[32m+[m[32m      let timeFraction = (time - start) / duration;[m
+[32m+[m[32m      if (timeFraction < 1) timeFraction = 1;[m
+[32m+[m[41m  [m
+[32m+[m[32m      // вычисление текущего состояния анимации[m
+[32m+[m[32m      let progress = timing(timeFraction);[m
+[32m+[m[41m  [m
+[32m+[m[32m      draw(progress); // отрисовать её[m
+[32m+[m[41m  [m
+[32m+[m[32m      if (timeFraction < 1) {[m
+[32m+[m[32m        requestAnimationFrame(animate);[m
+       }[m
+[32m+[m[41m  [m
+     });[m
+[31m-  };[m
+[32m+[m[32m  }[m
+[41m+  [m
+\ No newline at end of file[m
